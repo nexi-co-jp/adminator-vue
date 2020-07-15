@@ -16,11 +16,12 @@
                 active-class="active"
                 :to="menu.to"
             >
-                <span class="icon-holder" v-if="menu.icon"
-                    ><i :class="menu.icon"></i> </span
-                ><span class="title">{{ menu.text }}</span>
-                <span class="arrow" v-if="menu.children"
-                    ><i class="ti-angle-right" v-if="menu.children"></i>
+                <span class="icon-holder" v-if="menu.icon">
+                    <i :class="menu.icon"></i>
+                </span>
+                <span class="title">{{ menu.text }}</span>
+                <span class="arrow" v-if="menu.children">
+                    <i class="ti-angle-right" v-if="menu.children"></i>
                 </span>
             </router-link>
             <menuItem
@@ -93,24 +94,6 @@ export default {
             console.log(
                 'toggleMenu   key : ' + key + ' value ' + this.menuStatus[key]
             );
-
-            /**
-
-            $this
-                .parent()
-                .children('.dropdown-menu')
-                .slideDown(200, () => {
-                    $this.parent().addClass('open');
-                });
-
-
-            $this
-                .parent()
-                .children('.dropdown-menu')
-                .slideUp(200, () => {
-                    $this.parent().removeClass('open');
-                });
-             */
         },
         getMenuStatus(key) {
             console.log(

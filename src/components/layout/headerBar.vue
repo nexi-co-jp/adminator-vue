@@ -371,8 +371,26 @@
         </div>
     </div>
 </template>
+
 <script>
+import $ from 'jquery';
+import menuItem from '@/components/layout/menuItem.vue';
+
 export default {
     name: 'headerBar',
+    components: {
+        menuItem,
+    },
+    data: () => ({
+        isCollapsed: true,
+    }),
+    computed: {},
+    methods: {
+        toggleSidebar() {
+            this.isCollapsed = !this.isCollapsed;
+            this.$emit('toggle', this.isCollapsed);
+        },
+        search() {},
+    },
 };
 </script>

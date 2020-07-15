@@ -249,11 +249,5 @@
     </div>
 </template>
 <script>
-import '@/assets/js/charts/easyPieChart/index.js';
-import '@/assets/js/charts/easyPieChart/jquery.easypiechart.min.js';
-import '@/assets/js/charts/sparkline/index.js';
-import '@/assets/js/charts/sparkline/jquery.sparkline.min.js';
-import '@/assets/js/charts/chart.min.js';
-
 export default {};
 </script>

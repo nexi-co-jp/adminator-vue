@@ -1,9 +1,9 @@
 <template>
     <div id="app">
-        <div :class="sidebarClass">
+        <div :class="{ 'is-collapsed': isCollapsed }">
             <side-bar></side-bar>
             <div class="page-container">
-                <header-bar></header-bar>
+                <header-bar @toggle="setSideBarStatus"></header-bar>
                 <main class="main-content bgc-grey-100">
                     <div id="mainContent">
                         <div class="full-container">
@@ -27,6 +27,14 @@ export default {
         headerBar,
         sideBar,
         footerBar,
+    },
+    data: () => ({
+        isCollapsed: true,
+    }),
+    methods: {
+        setSideBarStatus(val) {
+            this.isCollapsed = val;
+        },
     },
 };
 </script>
