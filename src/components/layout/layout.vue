@@ -552,7 +552,7 @@ export default {
             {
                 icon: 'c-pink-500 ti-palette',
                 text: 'UI Elements',
-                to: 'elements',
+                to: 'ui',
             },
             {
                 icon: 'c-orange-500 ti-layout-list-thumb',
@@ -579,12 +579,12 @@ export default {
                     {
                         icon: '',
                         text: 'Google Map',
-                        to: 'basicTable',
+                        to: 'googleMap',
                     },
                     {
                         icon: '',
                         text: 'Vector Map',
-                        to: 'dataTable',
+                        to: 'vectorMap',
                     },
                 ],
             },

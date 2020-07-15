@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
     // ------------------------------------------------------
     // @Line Charts
     // ------------------------------------------------------
@@ -14,20 +14,22 @@ $(function () {
             data: {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 datasets: [{
-                    label: 'Series A',
-                    backgroundColor: 'rgba(237, 231, 246, 0.5)',
-                    borderColor: color.colors['deep-purple-500'],
-                    pointBackgroundColor: color.colors['deep-purple-700'],
-                    borderWidth: 2,
-                    data: [60, 50, 70, 60, 50, 70, 60]
-                }, {
-                    label: 'Series B',
-                    backgroundColor: 'rgba(232, 245, 233, 0.5)',
-                    borderColor: color.colors['blue-500'],
-                    pointBackgroundColor: color.colors['blue-700'],
-                    borderWidth: 2,
-                    data: [70, 75, 85, 70, 75, 85, 70]
-                }]
+                        label: 'Series A',
+                        backgroundColor: 'rgba(237, 231, 246, 0.5)',
+                        borderColor: color.colors['deep-purple-500'],
+                        pointBackgroundColor: color.colors['deep-purple-700'],
+                        borderWidth: 2,
+                        data: [60, 50, 70, 60, 50, 70, 60]
+                    },
+                    {
+                        label: 'Series B',
+                        backgroundColor: 'rgba(232, 245, 233, 0.5)',
+                        borderColor: color.colors['blue-500'],
+                        pointBackgroundColor: color.colors['blue-700'],
+                        borderWidth: 2,
+                        data: [70, 75, 85, 70, 75, 85, 70]
+                    }
+                ]
             },
 
             options: {
@@ -35,7 +37,6 @@ $(function () {
                     display: false
                 }
             }
-
         });
     }
 
@@ -53,26 +54,28 @@ $(function () {
             data: {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 datasets: [{
-                    label           : 'Dataset 1',
-                    backgroundColor : color.colors['deep-purple-500'],
-                    borderColor     : color.colors['deep-purple-800'],
-                    borderWidth     : 1,
-                    data            : [10, 50, 20, 40, 60, 30, 70],
-                }, {
-                    label           : 'Dataset 2',
-                    backgroundColor : color.colors['light-blue-500'],
-                    borderColor     : color.colors['light-blue-800'],
-                    borderWidth     : 1,
-                    data            : [10, 50, 20, 40, 60, 30, 70],
-                }],
+                        label: 'Dataset 1',
+                        backgroundColor: color.colors['deep-purple-500'],
+                        borderColor: color.colors['deep-purple-800'],
+                        borderWidth: 1,
+                        data: [10, 50, 20, 40, 60, 30, 70]
+                    },
+                    {
+                        label: 'Dataset 2',
+                        backgroundColor: color.colors['light-blue-500'],
+                        borderColor: color.colors['light-blue-800'],
+                        borderWidth: 1,
+                        data: [10, 50, 20, 40, 60, 30, 70]
+                    }
+                ]
             },
 
             options: {
                 responsive: true,
                 legend: {
-                    position: 'bottom',
-                },
-            },
+                    position: 'bottom'
+                }
+            }
         });
     }
 
@@ -90,13 +93,13 @@ $(function () {
             data: {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 datasets: [{
-                    backgroundColor : 'rgba(3, 169, 244, 0.5)',
-                    borderColor     : color.colors['light-blue-800'],
-                    data            : [10, 50, 20, 40, 60, 30, 70],
-                    label           : 'Dataset',
-                    fill            : 'start',
-                }],
-            },
+                    backgroundColor: 'rgba(3, 169, 244, 0.5)',
+                    borderColor: color.colors['light-blue-800'],
+                    data: [10, 50, 20, 40, 60, 30, 70],
+                    label: 'Dataset',
+                    fill: 'start'
+                }]
+            }
         });
     }
 
@@ -112,35 +115,35 @@ $(function () {
         Chart.Scatter(scatterCtx, {
             data: {
                 datasets: [{
-                    label           : 'My First dataset',
-                    borderColor     : color.colors['red-500'],
-                    backgroundColor : color.colors['red-500'],
-                    data: [
-                        { x: 10, y: 20 },
-                        { x: 30, y: 40 },
-                        { x: 50, y: 60 },
-                        { x: 70, y: 80 },
-                        { x: 90, y: 100 },
-                        { x: 110, y: 120 },
-                        { x: 130, y: 140 },
-                    ],
-                }, {
-                    label           : 'My Second dataset',
-                    borderColor     : color.colors['green-500'],
-                    backgroundColor : color.colors['green-500'],
-                    data: [
-                        { x: 150, y: 160 },
-                        { x: 170, y: 180 },
-                        { x: 190, y: 200 },
-                        { x: 210, y: 220 },
-                        { x: 230, y: 240 },
-                        { x: 250, y: 260 },
-                        { x: 270, y: 280 },
-                    ],
-                }],
-            },
+                        label: 'My First dataset',
+                        borderColor: color.colors['red-500'],
+                        backgroundColor: color.colors['red-500'],
+                        data: [
+                            { x: 10, y: 20 },
+                            { x: 30, y: 40 },
+                            { x: 50, y: 60 },
+                            { x: 70, y: 80 },
+                            { x: 90, y: 100 },
+                            { x: 110, y: 120 },
+                            { x: 130, y: 140 }
+                        ]
+                    },
+                    {
+                        label: 'My Second dataset',
+                        borderColor: color.colors['green-500'],
+                        backgroundColor: color.colors['green-500'],
+                        data: [
+                            { x: 150, y: 160 },
+                            { x: 170, y: 180 },
+                            { x: 190, y: 200 },
+                            { x: 210, y: 220 },
+                            { x: 230, y: 240 },
+                            { x: 250, y: 260 },
+                            { x: 270, y: 280 }
+                        ]
+                    }
+                ]
+            }
         });
     }
-
-
 });
