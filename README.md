@@ -1,4 +1,5 @@
 # adminator-vue
+This project is a vue version of adminator(https://colorlib.com/polygon/adminator/index.html).May this work help somebody.
 
 ## Project setup
 ```
